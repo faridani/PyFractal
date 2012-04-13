@@ -8,7 +8,7 @@ from PIL import Image, ImageFilter
 from math import log
 
 white = (255, 255, 255)
-width = 2000
+width = 5000
 height = width
 image1 = Image.new("RGB", (width, height), white)
 draw = ImageDraw.Draw(image1)
@@ -33,6 +33,9 @@ for xpix in range(1,width+1):
         if iteration == max_iteration:
             color = white
         draw.point((xpix,ypix), color)
+    if ((xpix*(100/1)%(width))==0):
+        print (xpix*ypix*1.0)/((width*height))*100.0, "%"#, xpix, width
+            
             
 
 filename = "mandel.png"
