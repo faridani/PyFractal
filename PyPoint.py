@@ -34,7 +34,7 @@ for xpix in range(1,width+1):
             color = white
         draw.point((xpix,ypix), color)
     if ((xpix*(100/1)%(width))==0):
-        print (xpix*ypix*1.0)/((width*height))*100.0, "%"#, xpix, width
+        print (xpix*ypix*1.0)/((width*height))*100.0, "%"
             
             
 
